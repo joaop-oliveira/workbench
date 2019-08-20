@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+body {
+  background: #f8f9fa !important;
+}
+
+.nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.nav-color {
+  /* background: #4f2c16d4; */
+  background: linear-gradient(
+    to right,
+    #00b4db,
+    #0083b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a {
+  text-decoration: none !important;
+  /* color: inherit !important; */
+}
