@@ -1,0 +1,27 @@
+@import 'https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap';
+
+// @import '~bootstrap/scss/_variables.scss';
+
+$cyan: #00b4db !default;
+
+// @import '~bootstrap/scss/bootstrap.scss';
+
+body {
+  background: #f8f9fa !important;
+}
+
+.nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+a {
+  text-decoration: none !important;
+}
+/* color: inherit !important; */
+
+.nav-color {
+  /* background: #4f2c16d4; */
+  background: linear-gradient(to right, #00b4db, #0083b0);
+}

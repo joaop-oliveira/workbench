@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router } from '@reach/router';
 import { Header } from './Components';
-import { Home } from './Pages';
+import { Home, Posts } from './Pages';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // j2w30zxxhhss Contenful Space ID
@@ -17,6 +17,7 @@ const App: React.FC = () => {
           <div className="col-md-12">
             <Router>
               <Home path="/home" />
+              <Posts path="/post/:entry" />
             </Router>
           </div>
         </div>

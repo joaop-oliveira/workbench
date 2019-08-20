@@ -36,6 +36,10 @@ export function Home(props: Props) {
               title={entry.fields.title}
               // @ts-ignore
               body={entry.fields.body}
+              // @ts-ignore
+              // @ts-ignore
+              category={entry.fields.category}
+              entry={entry.sys.id}
             />
           ))}
       </div>
