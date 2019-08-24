@@ -5,5 +5,5 @@ interface Props {
 }
 
 export function CardHeader({ source }: Props) {
-  return <img src={source} className="card-img-top" />;
+  return <img src={source} height="200" width="100" className="card-img-top" />;
 }
