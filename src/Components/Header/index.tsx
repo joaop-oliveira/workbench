@@ -14,12 +14,18 @@ export function Header({  }: Props): React.ReactElement {
           {'  Workbench'}
         </a>
         <ul className="navbar-nav">
-          <HeaderItem to="/home">{'Home'}</HeaderItem>
-          <HeaderItem to="/posts">{'Posts'}</HeaderItem>
+          <HeaderItem to="/home" datacy="header-home-link">
+            {'Home'}
+          </HeaderItem>
+          <HeaderItem to="/posts" datacy="header-posts-link">
+            {'Posts'}
+          </HeaderItem>
         </ul>
       </div>
       <ul className="navbar-nav">
-        <HeaderItem to="/login">{'Login'}</HeaderItem>
+        <HeaderItem to="/login" datacy="header-login-link">
+          {'Login'}
+        </HeaderItem>
       </ul>
     </nav>
   );

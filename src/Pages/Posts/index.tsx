@@ -6,7 +6,7 @@ import { Card } from '../../Components';
 import { EntryCollection } from 'contentful';
 
 // Exports Declarations
-export { Post } from './Post';
+export { PostPage } from './Post';
 
 interface Props {
   path: string;
@@ -31,9 +31,8 @@ export function Posts(props: Props) {
     <div className="row">
       {entries &&
         entries.items.map(entry => (
-          <div className="col-md-4">
+          <div key={entry.sys.id} className="col-md-4">
             <Card
-              key={entry.sys.id}
               // @ts-ignore
               image={entry.fields.image.fields.file.url}
               // @ts-ignore

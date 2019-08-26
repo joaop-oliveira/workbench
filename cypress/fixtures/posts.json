@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "fields": {
+        "title": "Post Test on Cypress",
+        "body": "This is the body of a test post",
+        "date": "2019-08-21T20:46-03:00",
+        "tags": "#cypress, #cypress2, #cypres3",
+        "category": "Cypress Test",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "http://images.ctfassets.net/j2w30zxxhhss/TWPIDwHFt7dJEyNmbKxjm/2c242c940900828a3f964f62a712ff18/js-testing.png"
+            }
+          }
+        }
+      },
+      "sys": {
+        "id": "1"
+      }
+    },
+    {
+      "fields": {
+        "title": "Second Post Test on Cypress",
+        "body": "This is the body of a second test post",
+        "date": "2019-08-22T20:46-03:00",
+        "tags": "#cypress, #cypress2, #cypres3",
+        "category": "Cypress Test",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "http://images.ctfassets.net/j2w30zxxhhss/TWPIDwHFt7dJEyNmbKxjm/2c242c940900828a3f964f62a712ff18/js-testing.png"
+            }
+          }
+        }
+      },
+      "sys": {
+        "id": "2"
+      }
+    }
+  ]
+}
