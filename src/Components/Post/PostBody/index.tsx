@@ -1,19 +1,18 @@
 // Import Declaration
 import * as React from 'react';
-import marked from 'marked';
+import ReactMarkdown from 'react-markdown';
+import { CodeBlock } from './CodeBlock';
 
 interface Props {
   body: string;
 }
 
 export function PostBody({ body }: Props) {
-  const md = marked(body);
-  console.log(md);
   return (
     <div className="row">
       <div className="col-md-12">
         <div className="text-justify nunito" data-cy="post-body">
-          {md}
+          <ReactMarkdown source={body} renderers={{ code: CodeBlock }} />
         </div>
       </div>
     </div>
