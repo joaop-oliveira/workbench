@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { HeaderItem } from './HeaderItem';
 
-interface Props {}
+interface Props {
+  openOverlay: () => void;
+}
 
-export function Header({  }: Props): React.ReactElement {
+export function Header({ openOverlay }: Props): React.ReactElement {
   return (
     <nav className="navbar navbar-expand-lg nav-color navbar-light nunito font-weight-bold d-flex justify-content-between">
       <div className="d-flex justify-content-start">
@@ -23,9 +25,11 @@ export function Header({  }: Props): React.ReactElement {
         </ul>
       </div>
       <ul className="navbar-nav">
-        <HeaderItem to="/login" datacy="header-login-link">
-          {'Login'}
-        </HeaderItem>
+        <li className="nav-item">
+          <a onClick={openOverlay} className="nav-link text-light nunito" data-cy={'login'}>
+            {'Login'} <span className="sr-only">(current)</span>
+          </a>
+        </li>
       </ul>
     </nav>
   );
